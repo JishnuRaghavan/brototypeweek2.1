@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rowContainer {
+  height: 100vh;
+  background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.4)) ,url(background.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#content {
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: rgb(252, 251, 251);
+}
+#content h3,h1 {
+  opacity: 0.9;
+}
+#content p {
+  opacity: 0.5;
+}
+#text {
+  color: #0ef;
+}
+
+#rowHeader {
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-navbar {
+  display:none;
+}
+
+#desktop-navbar {
+  margin-top: 5px;
+  justify-content: space-evenly;
+}
+
+/* media query starts here */
+
+@media (max-width:767px) {
+  #desktop-navbar {
+    display: none;
+  }
+  .navbar-toggler-icon {
+    filter: brightness(40%);
+  }
+  #mobile-navbar {
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    align-items: start;
+  }
+}

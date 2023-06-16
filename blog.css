@@ -1,0 +1,6 @@
+html {
+  background: linear-gradient(135deg, #7a7d86 0%, #171a20 100%);
+}
+::-webkit-scrollbar {
+  display: none;
+}

@@ -1,0 +1,49 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;  
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#sectionId {
+  background: linear-gradient(135deg, #094e3e, #6ab9a7);
+}
+
+#rowHeader {
+  margin: 0;
+  padding: 0;
+}
+
+
+#mobile-navbar {
+  display:none;
+}
+
+#desktop-navbar {
+  margin-top: 5px;
+  justify-content: space-evenly;
+}
+
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+  #desktop-navbar {
+    display: none;
+  }
+  .navbar-toggler-icon {
+    filter: brightness(40%);
+  }
+  #mobile-navbar {
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+    align-items: start;
+  }
+}
+

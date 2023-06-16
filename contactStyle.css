@@ -1,0 +1,72 @@
+body {
+  overflow: hidden;
+}
+#contactContainer {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(contactBg.jpg);
+  background-size: cover;
+  background-position: center;
+  justify-content: center;
+}
+
+#rowHeader {
+  margin: 0;
+  padding: 0;
+}
+
+#rowHeader .nav-pills {
+  display: none;
+}
+#rowHeader:hover .nav-pills {
+  display: flex;
+}
+
+#desktop-navbar {
+  margin-top: 5px;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 9999;
+}
+
+#mobile-navbar{
+  display: none;
+}
+
+#contactForm {
+  padding: 30px;
+  margin: 0 150px;
+  margin-top: 100px;
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 0.1vw 0.2vw #031cfd,
+  0 0 0.1vw 0.2vw #031cfd,
+  0 0 1vw 0.2vw #031cfd;
+
+}
+@media (max-width:767px) {
+  #contactForm{
+   margin: 60px; 
+  }
+  #desktop-navbar {
+    display: none;
+  }
+  #rowHeader:hover .nav-pills {
+    display: none;
+  }
+  #navbarTogglerDemo01 ul li a{
+    color: rgb(245, 238, 238);
+  }
+  .navbar-toggler-icon {
+    filter: brightness(40%);
+  }
+  #mobile-navbar {
+    display: flex;
+    text-align: center;
+    background-color: transparent;
+    align-items: start;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    backdrop-filter: blur(15px);
+  }
+}
